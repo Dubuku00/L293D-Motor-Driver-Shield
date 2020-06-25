@@ -10,7 +10,7 @@ from PYB_L239D import DriveStepper
 
 #DC motor initialize
 LMA = DriveDC("LMA", 'X1')
-LMB = DriveDC("RMB", 'X2')
+#M2 = DriveDC("LMB", 'X2')
 
 #Stepper initialize
 STP2 = DriveStepper("STP2", 100, 'X3', 'X4')
@@ -22,7 +22,7 @@ print('sr called')
 LMA.setSpeed('LMA', 100)	
 print('speed called')
 LMA.run('FORWARD')
-#RMB.run('FORWARD')
+#M2.run('FORWARD')
 delay(2000)
 LMA.run('RELEASE')
 
